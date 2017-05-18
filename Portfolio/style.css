@@ -15,13 +15,13 @@ button{
 	text-align: center;
   margin:auto;
   width: 50%;
-  Text-align:justified;
+ Â Text-align:justified;
 }
  p {
 	margin: 5%;
 	font-weight: bold;
 	color: #000000;
-  Text-align:justify;
+ Â Text-align:justify;
 }
 .mainPageBackground{
   background-image: url(http://7wallpapers.net/wp-content/uploads/4_Shanghai.jpg);
@@ -65,7 +65,7 @@ img {
 	margin: 5%;
 	font-weight: bold;
 	color: #000000;
-  Text-align:center;
+ Â Text-align:center;
 }
 h1 {
   color: black;
