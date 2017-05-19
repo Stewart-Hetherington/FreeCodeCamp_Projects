@@ -1,0 +1,30 @@
+<style>
+	 img{ 
+     display:block;
+  margin-left:25%;
+  margin-right:25%;
+}
+  img {   width:70%; height:auto; align:center; 
+   margin-left: 15%;
+  margin-right: 15%;}
+  p{
+    margin-left: 15%;
+  margin-right: 15%;
+  text-align:justify;
+  }
+  h2{
+    margin-left: 15%;
+  margin-right: 15%;
+  text-align:justify;
+  }
+  ul {
+  margin-left: 15%;
+  margin-right: 15%;
+  text-align:justify;
+}
+   body { 
+     display:block;
+     margin-top: 10%;
+     background-color:  green;
+   }
+</style>
