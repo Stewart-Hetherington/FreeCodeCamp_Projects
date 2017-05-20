@@ -1,0 +1,1 @@
+This project is a simple portfolio page made using CSS and Html. There are four links to my other profiles and some contact information. Nothing too fancy, hopefully I will be able to beef it up with more projects later on.
