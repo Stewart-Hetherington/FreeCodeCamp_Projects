@@ -13,9 +13,55 @@ var quotes = [
   'Something weird might just be something familiar viewed from a different angle.<br> - Marcy\s Mom',
   'You won\'t ever be able to tell if everything is going to be totally haywire.<br> - BMO',
   'Hey! Crack open that book and read something for fun\'s sake, alright?<br> - Jake',
+  
+  '\"Ham bon ing will save your life some day and u go what? u try to mug me? I am telling you man! Ham bon ing!\"<br> - Rigby',
+  '\"Nothing beats drinking joe with my bro.\"<br> - Rigby',
+  '\"Yeah losers. It takes more than expired soda to have a party. It takes guests with breasts. And mine don\'t count.\"<br> - Muscle Man',
+  '\"Y\'know what else rocks this hard? My Mom!\"<br> - Muscle Man',
+  
+  
+  
+  '\"Nobody exists on purpose. Nobody belongs anywhere. We\'re all going to die. Come watch TV.\"<br> - Morty',
+   '\"Listen, Morty, I hate to break it to you but what people call \"love\" is just a chemical reaction that compels animals to breed. It hits hard, Morty, then it slowly fades, leaving you stranded in a failing marriage. I did it. Your parents are gonna do it. Break the cycle, Morty. Rise above. Focus on science\" - Rick',
+  '\"What about the reality where Hitler cured cancer, Morty? The answer is: Don\'t think about it."<br> - Rick',
+  '\"You\'re young, you have your whole life ahead of you, and your anal cavity is still taut yet malleable.\"<br> - Rick',
+  '\"That\'s planning for failure, Morty... Even dumber than regular planning.\"<br> - Rick',
+  '\"It\'s like inception, so if it\'s confusing and stupid then so is everyone\'s favourite movie.\" <br> - Rick',
+  '\"What, so everyone\'s supposed to sleep every single night now. You realize that nighttime makes up half of all time.\" <br> - Rick',
+  
+  
 ]
+var imgArr = new Array();
+imgArr[0] = new Image();
+imgArr[0].src = "https://images7.alphacoders.com/487/487248.jpg";
 
+imgArr[0] = new Image();
+imgArr[0].src = "";
+
+imgArr[0] = new Image();
+imgArr[0].src = "";
+
+imgArr[0] = new Image();
+imgArr[0].src = "";
+
+imgArr[0] = new Image();
+imgArr[0].src = "";
+
+var randomNum = 0;
 function newQuote() {
-var randomNum = Math.floor(Math.random() * (quotes.length));
+ randomNum = Math.floor(Math.random() * (quotes.length));
 document.getElementById('quote').innerHTML = quotes[randomNum];
+}
+function changeBGImage(){
+  if (randomNum < 5) {
+    document.body.background = "https://www.walldevil.com/wallpapers/a59/3999-wallpaper-adventure-desktop-images.jpg";
+  }else if( randomNum < 10) {
+    document.body.background = "http://wallpapercave.com/wp/DJQQ33f.png";
+  }else if (randomNum < 14){
+    document.body.background = "https://images5.alphacoders.com/312/thumb-1920-312856.png";
+  }else if (randomNum < 18) {
+    document.body.background = "http://wallpaper-gallery.net/images/regular-wallpaper/regular-wallpaper-15.jpg";
+  } else{
+    document.body.background = "https://images3.alphacoders.com/606/606020.jpg";
+  }   
 }
