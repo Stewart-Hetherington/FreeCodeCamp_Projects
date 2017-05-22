@@ -1,0 +1,17 @@
+body{
+  margin:5%;
+}
+
+h1{
+  color:white;
+}
+p {
+  font-size:20px;
+  background-color: #ffffff;
+	border: 1px solid black;
+  text-align: justify;
+	 margin-left:25%;
+  margin-right:25%;
+	margin-top: 5%;
+	opacity: 0.7;
+}
