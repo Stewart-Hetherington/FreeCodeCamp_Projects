@@ -5,34 +5,35 @@ button{
 button{
 	background-color: #ffffff;
 	border: 1px solid black;
-  text-align: center;
+  	text-align: center;
 	margin-left: 2%;
 	margin-right:2%;
 	margin-top: 25%;
 	opacity: 0.7;
+	border-radius:8px;
 }
 .buttonBar{
-  display: block;
+ 	 display: block;
 	text-align: center;
-  margin:auto;
-  width: 50%;
-  Text-align:justified;
+ 	 margin:auto;
+ 	 width: 50%;
+ 	 Text-align:justified;
 }
  p {
 	margin: 5%;
 	font-weight: bold;
 	color: #000000;
-  Text-align:justify;
+  	Text-align:justify;
 }
 .mainPageBackground{
-  background-image: url(http://7wallpapers.net/wp-content/uploads/4_Shanghai.jpg);
+  	background-image: url(http://7wallpapers.net/wp-content/uploads/4_Shanghai.jpg);
 	width: 100%;
 	height: 100%;
 	color: white;
 }
 a:link {
-  text-decoration:none;
-  color: #0882c9;
+  	text-decoration:none;
+  	color: #0882c9;
 }
 a:visited {
 	color: #4a8fc4;
@@ -43,22 +44,22 @@ a:hover {
 	ease: .5s;
 }
 .textStyle {
-  margin-left:25%;
-  margin-right:25%;
-  Text-align:justify;
+ 	 margin-left:25%;
+ 	 margin-right:25%;
+  	Text-align:justify;
 }
 .textStyle h1 {
-  text-align: center;
+  	text-align: center;
 }
 img {
-  width:18%;
+  	width:18%;
 }
 .contactInfo {
-  background-color: #ffffff;
+  	background-color: #ffffff;
 	border: 1px solid black;
-  text-align: justify;
+ 	 text-align: justify;
 	 margin-left:25%;
-  margin-right:25%;
+ 	 margin-right:25%;
 	margin-top: 5%;
 	opacity: 0.7;
 }
@@ -66,12 +67,12 @@ img {
 	margin: 5%;
 	font-weight: bold;
 	color: #000000;
-  Text-align:center;
+  	Text-align:center;
 }
 h1 {
-  color: black;
+  	color: black;
 }
 breaker {
-  margin 10%;
+ 	 margin 10%;
 }
 </style>
