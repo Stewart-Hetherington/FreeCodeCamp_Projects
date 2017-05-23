@@ -51,7 +51,7 @@ var quotes = [
   '\"I\'m always hungry and that\'s that!\"<br> - Ash Ketchum',
   ' \"If anybody\'s out there, you can come out. And if you\'re a monster or a ghost, you can stay where you are.\"<br> - Ash Ketchum',
   //Gary
-  '\"Well ash ya snooze la lose and you\'re behind right from the start\"<br> - Gary Oak',
+  '\"Well ash ya snooze ya lose and you\'re behind right from the start\"<br> - Gary Oak',
   '\"Sometimes I wonder why I was cursed with this talent.\"<br> - Gary Oak',
   //Random trainer
   '\"If you need to make a difficult decision and you let someone else decide for you, you will regret it, no matter how it turns out\"<br> - some pokemon trainer on Route 104',
