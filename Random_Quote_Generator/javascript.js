@@ -79,6 +79,7 @@ var quotes = [
   //Uncle Rico
   '\" We need like some name tags with our picture on it, all laminated and what not. I mean, we gotta look legit man.\"<br> - Uncle Rico',
 ]
+document.body.background = "https://www.walldevil.com/wallpapers/a59/3999-wallpaper-adventure-desktop-images.jpg";
 var randomNum = 0;
 function newQuote() {
  randomNum = Math.floor(Math.random() * (quotes.length));
@@ -154,4 +155,3 @@ function changeBGImage(){
     document.body.background = "https://i.ytimg.com/vi/qNK64VbFThA/maxresdefault.jpg";      
   }
 }
-
