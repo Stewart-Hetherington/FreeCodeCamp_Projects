@@ -21,7 +21,6 @@ var quotes = [
   '\"Hey, it\'s OK. People make mistakes. It\’s all part of growing up, and you never really stop growing.\"<br> - The Duke of Nuts',
   //Marcy's mom
   '\"Something weird might just be something familiar viewed from a different angle.\"<br> - Marcy\s Mom',
-
   //Regular Show
   //Rigby
   '\"Ham bon ing will save your life some day and u go what? u try to mug me? I am telling you man! Ham bon ing!\"<br> - Rigby',
@@ -29,8 +28,6 @@ var quotes = [
   //Muscle man
   '\"Yeah losers. It takes more than expired soda to have a party. It takes guests with breasts. And mine don\'t count.\"<br> - Muscle Man',
   '\"Y\'know what else rocks this hard? My Mom!\"<br> - Muscle Man',
-  
-  
   //Rick and Morty
   //Morty
   '\"Nobody exists on purpose. Nobody belongs anywhere. We\'re all going to die. Come watch TV.\"<br> - Morty',
@@ -41,17 +38,16 @@ var quotes = [
   '\"That\'s planning for failure, Morty... Even dumber than regular planning.\"<br> - Rick',
   '\"It\'s like inception, so if it\'s confusing and stupid then so is everyone\'s favourite movie.\" <br> - Rick',
   '\"What, so everyone\'s supposed to sleep every single night now. You realize that nighttime makes up half of all time.\" <br> - Rick',
-  
   //pokemon
   //Mewtwo
   '\"I see now that the circumstances of one\'s birth ar irrelevant. It is what you do with the gift of life that determines who you are.\"<br> - Mewtwo',
   '\"Humans may create me, but they cannot enslave me. This cannot be my destiny!\"<br> - Mewtwo',
   //Ash
-  '\"Cause i always play to win!\"<br> - Ash Ketchum',
+  '\"Cause I always play to win!\"<br> - Ash Ketchum',
   '\"I\'m always hungry and that\'s that!\"<br> - Ash Ketchum',
   ' \"If anybody\'s out there, you can come out. And if you\'re a monster or a ghost, you can stay where you are.\"<br> - Ash Ketchum',
   //Gary
-  '\"Well ash ya snooze ya lose and you\'re behind right from the start\"<br> - Gary Oak',
+  '\"Well ash ya snooze ya lose, and you\'re behind right from the start\"<br> - Gary Oak',
   '\"Sometimes I wonder why I was cursed with this talent.\"<br> - Gary Oak',
   //Random trainer
   '\"If you need to make a difficult decision and you let someone else decide for you, you will regret it, no matter how it turns out\"<br> - some pokemon trainer on Route 104',
@@ -60,16 +56,28 @@ var quotes = [
   '\"The more wonderful the meeting,<br>the sadder the parting\"<br> - some pokemon trainer on Stark Mountain',
   '“That BILL! I heard that he\’ll do whatever it takes to get rare Pokemon. He\’s not above doing all sorts of things, I\’ve heard.\"<br> - man in Cerulian City pokemon center',
   '\“Develop amnesia conveniently and forget everything you heard!\”<br> - Team Rocket grunt at the Sevii Islands',
-  
   //Elite 4
   '\"Even if you lose in battle, if you surpass what you\'ve done before, you have bested yourself.\<br> - Marshal, Unove Elite Four"',
   '\"A warrior does not dash off in pursuit of another victory, nor does one throw a fit when experiencing a loss. A real warrior ponders the next battle.\<br> - Grimsley, Unova Elite Four”',
   //Professor Oak
   '\“This is my grandson. He\’s been your rival since you were a baby. …Erm, what is his name again?\”<br> - Professor Oak',
-  
-  
-  
-  
+  //Napolean Dynamit
+  //Napolean   
+  '\"You know, like nunchuck skills, bo hunting skills, computer hacking skills. Girls only like guys who have great skills.\"<br> - Napolean Dynamite',
+  '\" I see your drinking 1%. Does that mean you think you\'re fat? Cause you\'re not. You could be drinking whole if you wanted to.<br> - Napolean Dynamite\"',
+  '\"Is that what you\'re trying to do. Ruin my life and make me look like a freakin idiot!\"<br> - Napolean Dynamite',
+  '\"It\'s a liger. It\'s probably my favorite animal. It defends itself with its growing skills in the field of magic.\"<br> - Napolean Dynamite',
+  '\"Grandma just called. She said you should go home because you\'re ruining everyone\'s lives and eating all the steak.\"<br> - Napolean Dynamite',
+  '\"Just follow your heart. That\'s what I do.\"<br> - Napolean Dynamite',
+  //Kip 
+  '\"Napoleon, don\'t be jealous that I\'ve been chatting online with babes all day. Besides, we both know that I\'m training to be a cage fighter.<br> - Kip',
+  '\"Well, things are getting pretty serious right now. I mean, we chat online for, like, two hours every day so I guess you could say things are gettin pretty serious.\"<br> - Kip',
+  '\"LaFawnduh is *the* best thing that has ever happened to me. I\'m 100% positive she\'s my soul mate. Don\'t worry Napoleon, I\'m sure there\'s a babe out there for you too. Peace out.\"<br> - Kip',
+  //Pedro
+  '\"Build her a cake or something.\"<br> - Pedro Sanchez',
+  '\" if you vote for me, all of your wildest dreams will come true\"<br> - Padro Snachez',
+  //Uncle Rico
+  '\" We need like some name tags with our picture on it, all laminated and what not. I mean, we gotta look legit man.\"<br> - Uncle Rico',
 ]
 var randomNum = 0;
 function newQuote() {
@@ -105,7 +113,6 @@ function changeBGImage(){
     //MuscleMan
   }else if (randomNum < 18) {
     document.body.background = "https://i.ytimg.com/vi/ttDwpySPM-I/maxresdefault.jpg";
-    
     //Rick and Morty
     //Morty
   } else if (randomNum < 19) {
@@ -114,7 +121,6 @@ function changeBGImage(){
   } 
   else if (randomNum < 25) {
     document.body.background = "https://images2.alphacoders.com/642/thumb-1920-642540.png";
-    
     //Pokemon
     //Mewtwo   
   }else if (randomNum < 27) {
@@ -134,5 +140,18 @@ function changeBGImage(){
   //Professor Oak     
   }else if (randomNum < 41) {
     document.body.background = "http://wallpapersdsc.net/wp-content/uploads/2016/09/Pikachu-HD-Wallpaper.jpg";  
-  } 
+    //Napolean Dynamite
+  }else if (randomNum < 47) {
+    document.body.background = "http://filmgarb.com/wp-content/uploads/film-napoleon_dynamite-2004-napoleon_dynamite-jonheder-footwear-boots.jpg";  
+  //Kip    
+  }else if (randomNum < 50) {
+    document.body.background = "http://filmgarb.com/wp-content/uploads/film-napoleon_dynamite-2004-kip-aaron_ruell-tops-blue_polo.jpg";  
+  //Pedro     
+  }else if (randomNum < 52) {
+    document.body.background = "http://filmgarb.com/wp-content/uploads/film-napoleon_dynamite-2004-napoleon_dynamite-jonheder-tshirts-vote_for_pedro_tshirt.jpg";  
+  //Uncle Rico    
+  }else if (randomNum < 53) {
+    document.body.background = "https://i.ytimg.com/vi/qNK64VbFThA/maxresdefault.jpg";      
+  }
 }
+
