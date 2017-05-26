@@ -1,3 +1,5 @@
+<style>
+
 body{
   margin:5%;
   color: #00B8F5;
@@ -19,22 +21,20 @@ p {
 	opacity: 0.7;
 }
 button{
-  position:static;
-  display:block;
+  position:fixed;
   background-color: #00B8F5;
-	border-style: inset;
-  margin-left:10%;
-  margin-right:10%;
-	margin-top: 10%;
+border-style: inset;
+  left:40%;
+top:50%;
   width: 20%;
-	opacity: 0.7;
+opacity: 0.7;
   border-radius:15px;
 }
 button div{
   text-align:justified;
   color:white;
   font-size:20px;
-  position: static;
-  top:50%;
-  left:50%;
+  
 }
+
+</styl
