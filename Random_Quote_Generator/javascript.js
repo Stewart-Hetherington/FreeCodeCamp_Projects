@@ -78,6 +78,24 @@ var quotes = [
   '\" if you vote for me, all of your wildest dreams will come true\"<br> - Padro Snachez',
   //Uncle Rico
   '\" We need like some name tags with our picture on it, all laminated and what not. I mean, we gotta look legit man.\"<br> - Uncle Rico',
+  //Dragon ball Z
+  //Goku
+  '\" I would rather be a brainless monkey than a heartless monster.\"<br /> - Goku',
+  '\"Sorry, I saw an opening that just screamed \'ATTACK,\' so I did\"<br /> - Goku',
+  '\"Power comes in response to a need, not a desire. You have to create that need.\"<br /> - Goku',
+  '\"Why do women have butts on their chests?\" <br /> - Goku',
+  '\"The ocean is so salty because everyone pees in it.\"<br /> - Goku',
+  //Vegeta
+  '\"You can take control of my mind and my body, but there is one thing a Saiyan always keep... his PRIDE!\"<br /> - Vegeta',
+  '\"There\'s only one certainty in life. A strong man stands above and conquers all!\"<br /> - Vegeta ',
+  '\"Are you ready now to witness a power not seen for thousands of years?\"<br /> - Vegeta',
+  '\"Whenever the journalists show up, I\'ll just destroy them.\"<br /> -Vegeta',
+  //Frieza
+  '\" There\'re three things I refuse to tolerate: cowardice, bad haircuts, and millitary insurrection.\"<br /> - Frieza',
+  '\"You have the power levels of a Boy Scout troop!\"<br /> - Frieza',
+  //Piccolo
+  '\" Fool! Never believe anything the enemy tells you!\"<br /> - Piccolo',
+  
 ]
 document.body.background = "https://www.walldevil.com/wallpapers/a59/3999-wallpaper-adventure-desktop-images.jpg";
 var randomNum = 0;
@@ -153,5 +171,20 @@ function changeBGImage(){
   //Uncle Rico    
   }else if (randomNum < 53) {
     document.body.background = "https://i.ytimg.com/vi/qNK64VbFThA/maxresdefault.jpg";      
+  }
+  //Goku
+  else if (randomNum < 58) {
+    document.body.background = "https://images2.alphacoders.com/564/thumb-1920-564835.jpg";
+  }
+  //Vegeta
+  else if (randomNum < 62) {
+    document.body.background = "http://s1.picswalls.com/wallpapers/2015/09/27/dragon-ball-z-wallpaper-hd_125244287_276.jpg";
+  }
+  //Frieza
+  else if (randomNum < 64) {
+    document.body.background = "http://wallpapercave.com/wp/o72eC1m.jpg";
+    //Piccolo
+  }else if (randomNum < 65) {
+    document.body.background = "https://images3.alphacoders.com/261/thumb-1920-261649.jpg";
   }
 }
