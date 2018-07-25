@@ -1,0 +1,97 @@
+<html>
+  <h1 id="title"> Welcome To Mars <h1>
+
+  <div id= "container">
+    <p id="description"> Congratulations! You have been accepted for the Mars Collony Mission. Please fill out this quick survey before your departure. </p>
+    
+    <form id="survey-form">
+      
+      <div class="row">
+        <div class="label"> 
+          <label id="name-label" for="name"> Name : </label>
+        </div>
+        <div id="right-col">
+          <input type="text" id="name" name="name"class="input" placeholder=" Please enter your full name " required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="label"> 
+          <label id="email-label" for="email"> Email : </label>
+        </div>
+        <div id="right-col">
+          <input type="email" id="email" name="email" class="input" placeholder=" Please enter your Email "  pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"  required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="label"> 
+          <label id="number-label" for="age"> Age : </label>
+        </div>
+        <div id="right-col">
+          <input type="number" id="age" name="age"class="input" placeholder=" Please enter your age " required min="18" max="45">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="label">
+          <label for="qualification"> How will you benefit our colony </label>
+        </div>
+        <div id="right-col">
+          <select id="dropdown" name="profession" class="dropdown">
+            <option disabled value> Please select an option </option>
+            <option value="student"> Student </option>
+            <option value="engineer"> Engineer </option>
+            <option value="rocket-scientist"> Rocket Scientist </option>
+            <option value="chemist"> Chemist </option>
+            <option value="biologist"> Biologist </option>
+            <option value="teacher"> Teacher </option>
+            <option value="software-programmer"> Software Proggrammer </option>
+          </select>
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="label">
+          <label for="familyMembers"> How many family members will you be bringing to Mars? </label>
+        </div>
+        <div class="right-col">
+          <ul style="list style: none;">
+            <li class="radio"><label> 3 or less <input name="radio-buttons" value="1" type="radio" class="famMembers"></label></li>
+            <li class="radio"><label> 5 or less <input name="radio-buttons" value="1" type="radio" class="famMembers"></label></li>
+            <li class="radio"><label> 8 or less <input name="radio-buttons" value="1" type="radio" class="famMembers"></label></li>
+          </ul>
+        </div>
+    </div>
+      
+      <div class="row">
+        <div class="label">
+          <label for="available-launches"> Which dates will you be available to launch </label>
+        </div>
+        <div class="right-col">
+          <ul id="date-available" style="list-style: none;">
+            <li class="checkbox"><label><input name="select" value="1" type="checkbox" class="dates"> 2025/12/25 </label></li>
+            <li class="checkbox"><label><input name="select" value="1" type="checkbox" class="dates"> 2026/01/12 </label></li>
+            <li class="checkbox"><label><input name="select" value="1" type="checkbox" class="dates"> 2026/01/25 </label></li>
+            <li class="checkbox"><label><input name="select" value="1" type="checkbox" class="dates"> 2026/02/12 </label></li>
+            <li class="checkbox"><label><input name="select" value="1" type="checkbox" class="dates"> 2026/02/25 </label></li>
+            <li class="checkbox"><label><input name="select" value="1" type="checkbox" class="dates"> 2026/02/27 </label></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="label">
+          <label for="comments"> Additional Querries? </label>
+        </div>
+        <div class="right-col">
+          <textarea id="comments" class="querries" name="comment" placeholder="Please enter additional querries here. "></textarea>
+        </div>
+      </div>
+      
+      <button id="submit" type="submit"> Submit </button>
+      
+      
+    </form>
+  </div>
+</html>
