@@ -1,5 +1,6 @@
 <style>
 
+
 body{
   padding: 5%;
   background-color: #93f2a9;
@@ -20,13 +21,6 @@ body{
   min-width: 50%;
 }
 
-@media (max-width: 650px) {
-    
-    li {
-     padding-bottom: 5px; 
-    }
-  }
-
 #header{
   position: fixed;
   top: 0;
@@ -39,7 +33,6 @@ body{
   max-width:25%;
   height: auto;
   margin-top: 1%;
-  max-width:50%;
   margin-left:15%;
   padding: 6px 0px;
 }
@@ -87,7 +80,14 @@ li a {
   justify-content: center;
 }
 
- #pricing, #contact{
+ #pricing{
+  margin-top:60px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact{
   margin-top:60px;
   display:flex;
   flex-direction: column;
@@ -103,9 +103,8 @@ li a {
   flex-direction: row;
   background-color: white;
   border-radius: 5px;
-  min-width: 80%;
+  width: 100%;
 }
-
 
 .flex-col{
   display: flex;
@@ -113,9 +112,14 @@ li a {
 }
 
 .product-img{
-  padding: 8%;
+  padding: 5%;
   align-items: center;
-  max-width: 20%;
+  width: 100%;
+}
+@media (max-width: 650px) {
+  .product-img{
+    max-width: 100px;
+  }
 }
 
 .product-price{
@@ -131,21 +135,10 @@ p{
   padding: 1%;
 }
 
-.contact-bar ul li{
-  
+.contact-info{
+  text-align: center;
+  min-width: 100px;
 }
 
-.product-price{
-  font-size: 20px;
-}
-
-p{
-  text-align:center;
-}
-
-.contact-bar{
-  min-width: 90%;
-  padding: 1%;
-}
 
 </style>
