@@ -16,21 +16,14 @@ body{
   flex-direction: row;
   justify-content: center;
   min-width: 50%;
-  
-  @media only screen and (max-width: 650px) {
-    margin-top: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 0 50px;
+}
+
+@media (max-width: 650px) {
     
     li {
      padding-bottom: 5px; 
     }
   }
-}
 
 #header{
   position: fixed;
@@ -121,6 +114,23 @@ li a {
   padding: 8%;
   align-items: center;
   max-width: 20%;
+}
+
+.product-price{
+  font-size: 20px;
+}
+
+p{
+  text-align:center;
+}
+
+.contact-bar{
+  min-width: 90%;
+  padding: 1%;
+}
+
+.contact-bar ul li{
+  
 }
 
 .product-price{
