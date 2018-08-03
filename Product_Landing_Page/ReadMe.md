@@ -8,6 +8,15 @@ technologies (just for example jQuery, React, Angular, or Vue) are not recommend
 own risk. Other projects will give you a chance to work with different technology stacks like React. We will accept and try to
 fix all issue reports that use the suggested technology stack for this project. Happy coding!
 
+Project can be viewed on Github :
+
+http://htmlpreview.github.io/?https://github.com/Stewart-Hetherington/FreeCodeCamp_Projects/blob/master/Product_Landing_Page/index.html
+
+The original project can be viewed on my CodePen :
+
+https://codepen.io/Stewart-Hetherington/pen/bjaQjY
+
+
 User Story #1: My product landing page should have a header element with a corresponding id="header".
 
 User Story #2: I can see an image within the header element with a corresponding id="header-img". A company logo would make a
