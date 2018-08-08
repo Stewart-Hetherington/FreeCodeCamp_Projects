@@ -1,21 +1,10 @@
 <style>
-	 img{ 
-     display:block;
-  margin-left:25%;
-  margin-right:25%;
+p{
+  text-align:justify;
 }
-  img {   width:70%; height:auto; align:center; 
-   margin-left: 15%;
-  margin-right: 15%;}
-  p{
-    margin-left: 15%;
-  margin-right: 15%;
-  text-align:justify;
-  }
-  h2{
-    margin-left: 15%;
-  margin-right: 15%;
-  text-align:justify;
+.center-text{
+  text-align:center;
+  margin: 20px;
   }
   ul {
   margin-left: 15%;
@@ -27,4 +16,30 @@
      margin-top: 10%;
      background-color:  green;
    }
+#main{
+  padding: 10px 25px;
+}
+#container{
+  background-color: white;
+  padding: 5px 25px;
+  border-radius: 4px;
+}
+#img-div{
+  padding: 50px;
+}
+img {
+    width: 100%;
+    height: auto;
+  max-width:600px;
+}
+#image {
+    margin: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#tribute-link {
+  color: green;
+}
 </style>
