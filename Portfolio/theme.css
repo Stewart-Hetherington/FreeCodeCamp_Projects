@@ -55,11 +55,6 @@ header{
   margin: auto;
   align: center;
 }
-@media only screen and (max-width: 500px) {
-  #welcome-section {
-    width: 100vh;
-  }
-}
 .project-tile {
   float : left;
   width: 30%;
