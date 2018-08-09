@@ -57,7 +57,7 @@ header{
 }
 @media only screen and (max-width: 500px) {
   #welcome-section {
-    width: 100vh;
+    max-width: 100vh;
   }
 }
 .project-tile {
@@ -74,6 +74,14 @@ header{
   max-height : 250px;
   min-width : 250px;
   min-height : 250px;
+}
+@media only screen and (max-width: 500px) {
+  .project-tile img {
+    max-width : 30vh;
+    max-height : 30vh;
+    min-width : 30vh;
+    min-height : 30vh;
+  }
 }
 
 /* Clear floats after image containers */
