@@ -110,6 +110,12 @@ button{
   width: 50%;
   Text-align:justified;
 }
+@media only screen and (max-width: 1125px) {
+  .buttonBar {
+    width: 100%;
+  }
+}
+
 a{
   text-decoration: none;
     color: #008080;
