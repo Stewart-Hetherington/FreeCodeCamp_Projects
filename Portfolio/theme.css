@@ -62,8 +62,8 @@ header{
 }
 @media only screen and (max-width: 1125px) {
   .project-tile{ 
-    min-height: 25vh;
-    min-width: 25vh;
+    min-height: 150px;
+    min-width: 150px;
     padding: 1%;
   }
 }
@@ -108,7 +108,7 @@ button{
 	text-align: center;
   margin:auto;
   width: 50%;
-  Text-align:justified;
+  Text-align:justified;
 }
 @media only screen and (max-width: 1125px) {
   .buttonBar {
