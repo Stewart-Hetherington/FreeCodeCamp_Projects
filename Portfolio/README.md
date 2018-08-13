@@ -1,7 +1,7 @@
 
-**This project is still incomplete. Since a free code camp update there are now new updates that must be made to the code.
+**This project is still incomplete. Since a free code camp update there are now new updates that must be made to the code.**
 
-***Responsive Web Design Projects - Build a Personal Portfolio Webpage
+***Responsive Web Design Projects - Build a Personal Portfolio Webpage***
 
 Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNBOYG.
 Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
