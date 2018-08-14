@@ -1,0 +1,329 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<html>
+  <head>
+    
+    <title> Technical Documentation Page </title>
+    
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    
+  </head>
+  
+  <body>
+       <nav id="navbar">
+          <ul>
+            <header> C++ Documentation </header>
+            <li><a href="#introduction" class="main-selection">Introduction</a></li>
+            <li><a href="#overview" class="main-selection">Overview</a></li>
+            <li><a href="#hello-world" class="main-selection">Hello World!</a></li>
+            <li><a href="#variables" class="main-selection">Variables</a></li>
+            <li><a href="#declaring-variables" class="main-selection">Declaring variables</a></li>
+            <li><a href="#variable-scope" class="main-selection">Variable scope</a></li>
+            <li><a href="#global-variables" class="main-selection">Global variables</a></li>
+            <li><a href="#constants" class="main-selection">Constants</a></li>
+            <li><a href="#data-types" class="main-selection">Data types</a></li>
+            <li><a href="#if-else-statements" class="main-selection">If...else statements</a></li>
+            <li><a href="#while-statement" class="main-selection">While statement</a></li>
+            <li><a href="#Function-declarations" class="main-selection">Function declarations</a></li>
+            <li><a href="#reference" class="main-selection">Reference</a></li>
+          </ul>
+        </nav>
+    
+    <main id="main-doc">
+      
+       <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <article>  
+      <p>C++  is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.
+
+It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights. C++ has also been found useful in many other contexts, with key strengths being software infrastructure and resource-constrained applications, including desktop applications, servers (e.g. e-commerce, Web search or SQL servers), and performance-critical applications (e.g. telephone switches or space probes). C++ is a compiled language, with implementations of it available on many platforms. Many vendors provide C++ compilers, including the Free Software Foundation, Microsoft, Intel, and IBM.</p>
+
+<p>C++ is standardized by the International Organization for Standardization (ISO), with the latest standard version ratified and published by ISO in December 2017 as ISO/IEC 14882:2017 (informally known as C++17).[8] The C++ programming language was initially standardized in 1998 as ISO/IEC 14882:1998, which was then amended by the C++03, C++11 and C++14 standards. The current C++17 standard supersedes these with new features and an enlarged standard library. Before the initial standardization in 1998, C++ was developed by Bjarne Stroustrup at Bell Labs since 1979, as an extension of the C language as he wanted an efficient and flexible language similar to C, which also provided high-level features for program organization.[9] C++20 is the next planned standard thereafter.
+
+Many other programming languages have been influenced by C++, including C#, D, Java, and newer versions of C.</p>
+      </artice>
+    </section>
+    <section class="main-section" id="overview">
+    <header>Overview</header>
+    <article>
+      <p>C++ is a statically typed, compiled, general-purpose, case-sensitive, free-form programming language that supports procedural, object-oriented, and generic programming.C++ is regarded as a middle-level language, as it comprises a combination of both high-level and low-level language features.</p>
+      <p>C++ fully supports object-oriented programming, including the four pillars of object-oriented development : </p>
+      <li>Encapsulation</li>
+      <li>Data hiding</li>
+      <li>Inheritance</li>
+      <li>Polymorphism</li>
+
+      </artice>
+    </section>
+  
+  <section class="main-section" id="hello-world">
+    <header>Hello world</header>
+    <article> 
+The “Hello World” program is the first step towards learning any programming language and also one of the simplest program you will learn. All you have to do is display the message “Hello World” on the screen. Let us now look at the program:
+<code>
+//Simple C++ program to display "Hello World"
+ 
+// Header file for input output functions
+#include &lt;iostream&gt;
+ 
+using namespace std;
+ 
+// main function -
+// where the execution of program begins
+int main()
+{
+    // prints Hello World
+    cout<<"Hello World";
+     
+    return 0;
+}
+
+</code>
+
+Output :
+  
+  <code>
+    Hello World
+  </code>
+  <p>Let us now understand every line of the above program :</p>
+    <ol>
+      <li><b>// Simple C++ program to display “Hello World”</b> : This line is a comment line. A comment is used to display additional information about the program. Comment does not contain any programming logic. When a comment is encountered by a compiler, the compiler simply skips that line of code. Any line beginning with ‘//’ without quotes OR in between /*…*/ in C++ is  comment.</li>
+      <li><b>#include </b>: In C++,  all lines that start with pound (#) sign are called directives and are processed by preprocessor which is a program invoked by the compiler. The #include directive tells the compiler to include a file and #include<iostream> . It tells the compiler to include the standard iostream file which contains declarations of all the standard input/output library functions.</li>
+      <li><b>int main() </b>: This line is used to declare a function named “main” which returns data of integer type. A function is a group of statements that are designed to perform a specific task. Execution of every C++ program begins with the main() function, no matter where the function is located in the program. So, every C++ program must have a main() function.</li>
+      <li><b>{ and }</b> : The opening braces ‘{‘ indicates the beginning of the main function and the closing braces ‘}’ indicates the ending of the main function. Every thing between these two comprises the body of the main function.</li>
+      <li><b>std::cout<<“Hello World”; </b>:  This line tells the compiler to display the message “Hello Worlld” on the screen. This line is called a statement in C++. Every statement is meant to perform some task. A semi-colon ‘;’ is used to end a statement. Semi-colon character at the end of statement is used to indicate that the statement is ending there.
+The std::cout is used to identify the standard character output device which is usually the desktop screen. Every thing followed by the character “<<” is displayed to the output device.</li>
+      <li><b>return 0;</b> : This is also a statement. This statement is used to return a value from a function and indicates the finishing of a function. This statement is basically used in functions to return the results of the operations performed by a function.</li>
+      <li><b>Indentation </b>: As you can see the cout and the return statement have been indented or moved to the right side. This is done to make the code more readable. In a program as Hello World, it does not hold much relevance seems but as the programs become more complex, it makes the code more readable, less error prone. Therefore, you must always use indentations and comments to make the code more readable</li>
+    </ol>
+    </article>
+    </section>
+  <section class="main-section" id="variables">
+    <header>Variables</header>
+    <p>
+A variable provides us with named storage that our programs can manipulate. Each variable in C++ has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+
+The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C++ is case-sensitive −
+
+There are following basic types of variable in C++ :
+    </p>
+   <ol>
+     <li><b>bool</b><br> Boolean data type is used for storing boolean or logical values. A boolean variable can store either true or false.</li>
+     <li><b>char</b><br> Character data type is used for storing characters. Keyword used for character data type is char. Characters typically requires 1 byte of memory space and ranges from -128 to 127 or 0 to 255.</li>
+     <li><b>int</b><br>  Keyword used for integer data types is int. Integers typically requires 4 bytes of memory space and ranges from -2147483648 to 2147483647</li>
+     <li><b>float</b><br> Floating Point data type is used for storing single precision floating point values or decimal values. Float variables typically requires 4 byte of memory space.</li>
+     <li><b>double</b><br> Double Floating Point data type is used for storing double precision floating point values or decimal values. Double variables typically requires 8 byte of memory space.</li>
+     <li><b>void</b><br> Void means without any value. void datatype represents a valueless entity. Void data type is used for those function which does not returns a value.</li>
+     <li><b>wchar_t</b><br> Wide character data type is also a character data type but this data type has size greater than the normal 8-bit datatype. It is generally 2 or 4 bytes long.</li>
+    </ol>
+    </section>
+  <section class="main-section" id="declaring-variables">
+    <header>Declaring variables</header>
+    <article>
+<p>A variable declaration provides assurance to the compiler that there is one variable existing with the given type and name so that compiler proceed for further compilation without needing complete detail about the variable. A variable declaration has its meaning at the time of compilation only, compiler needs actual variable definition at the time of linking of the program.</p>
+      <p>A variable declaration is useful when you are using multiple files and you define your variable in one of the files which will be available at the time of linking of the program. You will use extern keyword to declare a variable at any place. Though you can declare a variable multiple times in your C++ program, but it can be defined only once in a file, a function or a block of code.</p>
+      <p><b>Example</b></p>
+      <code>
+        #include &lt;iostream&gt;
+using namespace std;
+
+// Variable declaration:
+extern int a, b;
+extern int c;
+extern float f;
+  
+int main () {
+   // Variable definition:
+   int a, b;
+   int c;
+   float f;
+ 
+   // actual initialization
+   a = 10;
+   b = 20;
+   c = a + b;
+ 
+   cout << c << endl ;
+
+   f = 70.0/3.0;
+   cout << f << endl ;
+ 
+   return 0;
+}
+        </code>
+        <p>When the above code is compiled and executed, it produces the following result : </p>
+        <code>
+    30
+    23.3333
+        </code>
+        <p>Same concept applies on function declaration where you provide a function name at the time of its declaration and its actual definition can be given anywhere else. For example : </p>
+        <code>// function declaration
+int func();
+int main() {
+   // function call
+   int i = func();
+}
+
+// function definition
+int func() {
+   return 0;
+}
+        </code>
+        
+    </article>
+    </section>
+  <section class="main-section" id="variable-scope">
+    <header>Variable scope</header>
+    <article>
+     <p>In general, scope is defined as the extent upto which something can be worked with. In programming also scope of a variable is defined as the extent of the program code within which the variable can we accessed or declared or worked with. There are mainly two types of variable scopes as discussed below:</p>
+      <p><b>Local Variables</b></p>
+      <ul>
+        <li>Anything between ‘{‘ and ‘}’ is said to inside a block</li>
+        <li>Local variables do not exist outside the block in which they are declared, i.e. they can not be accessed or used outside that block.</li>
+        <li><b>Declaring local variables :</b> Local variables are declared inside a block</li>
+      </ul>
+    <code> 
+// CPP program to illustrate 
+// usage of local variables 
+#include &lt;iostream&gt;
+using namespace std;
+ 
+void func()
+{   
+    // this variable is local to the
+    // function func() and cannot be 
+    // accessed outside this function
+    int age=18;    
+}
+ 
+int main()
+{
+    cout << "Age is: " << age;
+     
+    return 0;
+}
+        </code>
+
+      <p>Output : </p>
+      <code>
+        Error: age was not declared in this scope
+      </code>
+      <p>The above program displays an error saying “age was not declared in this scope”. The variable age was declared within the function func() so it is local to that function and not visible to portion of program outside this function.
+        <br><br><b>Rectified Program</b> : To correct the above error we have to display the value of variable age from the function func() only. This is shown in the below program :</P>
+    <code>
+ // CPP program to illustrate 
+// usage of local variables 
+#include &lt;iostream&gt;
+using namespace std;
+ 
+void func()
+{   
+    // this variable is local to the
+    // function func() and cannot be 
+    // accessed outside this function
+    int age=18; 
+    cout << age;
+}
+ 
+int main()
+{
+    cout<<"Age is: ";
+    func();
+     
+    return 0;
+}
+      </code>
+      <p> Output : </p>
+      <code>
+ Age is: 18
+      </code>
+      
+    </article>
+    </section>
+    
+  <section class="main-section" id="global-variables">
+    <header>Global variables</header>
+    <article>
+<p>As the name suggests, Global Variables can be accessed from any part of the program.</p>
+
+<ul>
+  <li>They are available through out the life time of a program.</li>
+  <li>They are declared at the top of the program outside all of the functions or blocks.</li>
+  <li><b>Declaring global variables </b>: Global variables are usually declared outside of all of the functions and blocks, at the top of the program. They can be accessed from any portion of the program.</li>
+      </ul>
+      <code>
+        // CPP program to illustrate 
+// usage of global variables 
+#include &lt;iostream&gt;
+using namespace std;
+ 
+// global variable
+int global = 5;
+ 
+// global variable accessed from
+// within a function
+void display()
+{
+    cout << global << endl; 
+}
+ 
+// main function
+int main()
+{
+    display();
+     
+    // changing value of global
+    // variable from main function
+    global = 10;
+    display();
+}
+        </code>
+      <p>Output: </p>
+      <code>
+ 5
+10
+      </code>
+    </article>
+    </section>
+  <section class="main-section" id="Constants">
+    <header>Constants</header>
+    <article>
+
+    </article>
+    </section>
+  <section class="main-section" id="Data_types">
+    <header>Data types</header>
+    <article>
+      
+    </article>
+    </section>
+  <section class="main-section" id="if...else_statement">
+    <header>if...else statement</header>
+    <article>
+
+    </article>
+    </section>
+  <section class="main-section" id="while_statement">
+    <header>while statement</header>
+    <article>
+
+    </article>
+    </section>
+  <section class="main-section" id="Function-declarations">
+    <header>Function declarations</header>
+    <article> 
+
+    </article>
+    </section>
+  <section class="main-section" id="Reference">
+    <header>Reference</header>
+    <article>
+      <li> Hello World code : This article is contributed by <a href="https://www.facebook.com/h%3C/li%3E%3Cp%3Earsh.agarwal.16752" target="_blank"><b>Harsh Agarwal</b></a>. If you like GeeksforGeeks and would like to contribute, you can also write an article using contribute.geeksforgeeks.org or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks. <a href="https://www.geeksforgeeks.org/writing-first-c-program-hello-world-example/" target="_blank"><b>GeeksforGeeks</b></a>
+      </li>
+      <li> Variables : http://www-h.eng.cam.ac.uk/help/languages/C++/c++_tutorial/variables.html </li>
+    </article>
+    </section>
+</main>
+    
+  </body>
+  
+</html>
