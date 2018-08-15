@@ -10,21 +10,21 @@
   
   <body>
        <nav id="navbar">
+         <header> C++ Documentation </header>
           <ul>
-            <header> C++ Documentation </header>
-            <li><a href="#introduction" class="main-selection">Introduction</a></li>
-            <li><a href="#overview" class="main-selection">Overview</a></li>
-            <li><a href="#hello-world" class="main-selection">Hello World!</a></li>
-            <li><a href="#variables" class="main-selection">Variables</a></li>
-            <li><a href="#declaring-variables" class="main-selection">Declaring variables</a></li>
-            <li><a href="#variable-scope" class="main-selection">Variable scope</a></li>
-            <li><a href="#global-variables" class="main-selection">Global variables</a></li>
-            <li><a href="#constants" class="main-selection">Constants</a></li>
-            <li><a href="#data-types" class="main-selection">Data types</a></li>
-            <li><a href="#if-else-statements" class="main-selection">If...else statements</a></li>
-            <li><a href="#while-statement" class="main-selection">While statement</a></li>
-            <li><a href="#Function-declarations" class="main-selection">Function declarations</a></li>
-            <li><a href="#reference" class="main-selection">Reference</a></li>
+            <a href="#Introduction" class="nav-link"><li>Introduction</li></a>
+            <a href="#Overview" class="nav-link"><li>Overview</li></a>
+            <a href="#Hello_world!" class="nav-link"><li>Hello World!</li></a>
+            <a href="#Variables" class="nav-link"><li>Variables</li></a>
+            <a href="#Declaring_variables"class="nav-link"><li>Declaring variables</li></a>
+            <a href="#Variable_scope" class="nav-link"><li>Variable scope</li></a>
+            <a href="#Global_variables" class="nav-link"><li>Global variables</li></a>
+            <a href="#Constants" class="nav-link"><li>Constants</li></a>
+
+            <a href="#if...else_statements" class="nav-link"><li>If...else statements</li></a>
+            <a href="#while_statement" class="nav-link"><li>While statement</li></a>
+            <a href="#Function_declarations" class="nav-link"><li>Function declarations</li></a>
+            <a href="#Reference" class="nav-link"><li>Reference</li></a>
           </ul>
         </nav>
     
@@ -42,7 +42,7 @@ It was designed with a bias toward system programming and embedded, resource-con
 Many other programming languages have been influenced by C++, including C#, D, Java, and newer versions of C.</p>
       </artice>
     </section>
-    <section class="main-section" id="overview">
+    <section class="main-section" id="Overview">
     <header>Overview</header>
     <article>
       <p>C++ is a statically typed, compiled, general-purpose, case-sensitive, free-form programming language that supports procedural, object-oriented, and generic programming.C++ is regarded as a middle-level language, as it comprises a combination of both high-level and low-level language features.</p>
@@ -55,8 +55,8 @@ Many other programming languages have been influenced by C++, including C#, D, J
       </artice>
     </section>
   
-  <section class="main-section" id="hello-world">
-    <header>Hello world</header>
+  <section class="main-section" id="Hello_world!">
+    <header>Hello world!</header>
     <article> 
 The “Hello World” program is the first step towards learning any programming language and also one of the simplest program you will learn. All you have to do is display the message “Hello World” on the screen. Let us now look at the program:
 <code>
@@ -72,7 +72,7 @@ using namespace std;
 int main()
 {
     // prints Hello World
-    cout<<"Hello World";
+    cout &lt;&lt; "Hello World";
      
     return 0;
 }
@@ -97,7 +97,7 @@ The std::cout is used to identify the standard character output device which is 
     </ol>
     </article>
     </section>
-  <section class="main-section" id="variables">
+  <section class="main-section" id="Variables">
     <header>Variables</header>
     <p>
 A variable provides us with named storage that our programs can manipulate. Each variable in C++ has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
@@ -116,7 +116,7 @@ There are following basic types of variable in C++ :
      <li><b>wchar_t</b><br> Wide character data type is also a character data type but this data type has size greater than the normal 8-bit datatype. It is generally 2 or 4 bytes long.</li>
     </ol>
     </section>
-  <section class="main-section" id="declaring-variables">
+  <section class="main-section" id="Declaring_variables">
     <header>Declaring variables</header>
     <article>
 <p>A variable declaration provides assurance to the compiler that there is one variable existing with the given type and name so that compiler proceed for further compilation without needing complete detail about the variable. A variable declaration has its meaning at the time of compilation only, compiler needs actual variable definition at the time of linking of the program.</p>
@@ -142,10 +142,10 @@ int main () {
    b = 20;
    c = a + b;
  
-   cout << c << endl ;
+   cout &lt;&lt; c &lt;&lt; endl ;
 
    f = 70.0/3.0;
-   cout << f << endl ;
+   cout &lt;&lt; f &lt;&lt; endl ;
  
    return 0;
 }
@@ -171,7 +171,7 @@ int func() {
         
     </article>
     </section>
-  <section class="main-section" id="variable-scope">
+  <section class="main-section" id="Variable_scope">
     <header>Variable scope</header>
     <article>
      <p>In general, scope is defined as the extent upto which something can be worked with. In programming also scope of a variable is defined as the extent of the program code within which the variable can we accessed or declared or worked with. There are mainly two types of variable scopes as discussed below:</p>
@@ -197,7 +197,7 @@ void func()
  
 int main()
 {
-    cout << "Age is: " << age;
+    cout &lt;&lt; "Age is: " &lt;&lt; age;
      
     return 0;
 }
@@ -221,12 +221,12 @@ void func()
     // function func() and cannot be 
     // accessed outside this function
     int age=18; 
-    cout << age;
+    cout &lt;&lt; age;
 }
  
 int main()
 {
-    cout<<"Age is: ";
+    cout &lt;&lt; "Age is: ";
     func();
      
     return 0;
@@ -240,7 +240,7 @@ int main()
     </article>
     </section>
     
-  <section class="main-section" id="global-variables">
+  <section class="main-section" id="Global_variables">
     <header>Global variables</header>
     <article>
 <p>As the name suggests, Global Variables can be accessed from any part of the program.</p>
@@ -263,7 +263,7 @@ int global = 5;
 // within a function
 void display()
 {
-    cout << global << endl; 
+    cout &lt;&lt; global &lt;&lt; endl; 
 }
  
 // main function
@@ -282,36 +282,639 @@ int main()
  5
 10
       </code>
+      <p>In the program, the variable “global” is declared at the top of the program outside all of the functions so it is a global variable and can be accessed or updated from anywhere in the program.</p>
+      
+      <p>What if there exists a local variable with the same name as that of global variable inside a function?</p>
+      
+      <p>Let us repeat the question once again. The question is : if there is a variable inside a function with the same name as that of a global variable and if the function tries to access the variable with that name, then which variable will be given precedence? Local variable or Global variable? Look at the below program to understand the question :</p>
+      <code>
+        // CPP program to illustrate 
+// scope of local variables 
+// and global variables together
+#include &lt;iostream&gt;
+using namespace std;
+ 
+// global variable
+int global = 5;
+ 
+// main function
+int main()
+{   
+    // local variable with same 
+    // name as that of global variable
+     
+    int global = 2;
+    cout &lt;&lt; global &lt;&lt; endl;
+}
+        </code>
+        <p>Look at the above program. The variable “global” declared at the top is global and stores the value 5 where as that declared within main function is local and stores a value 2. So, the question is when the value stored in the variable named “global” is printed from the main function then what will be the output? 2 or 5?</p>
+        <ul>
+          <li>Usually when two variable with same name are defined then the compiler produces a compile time error. But if the variables are defined in different scopes then the compiler allows it.</li>
+          <li>Whenever there is a local variable defined with same name as that of a global variable then the compiler will give precedence to the local variable</li>
+        </ul>
+        <p>Here in the above program also, the local variable named “global” is given precedence. So the output is 2.</p>
+        <p>How to access a global variable when there is a local variable with same name?</p>
+        <p>What if we want to do the opposite of above task. What if we want to access global variable when there is a local variable with same name?
+To solve this problem we will need to use the scope resolution operator. Below program explains how to do this with the help of scope resolution operator.</p>
+        <code>
+          // C++ program to show that we can access a global 
+// variable using scope resolution operator :: when  
+// there is a local variable with same name 
+#include &lt;iostream&gt; 
+using namespace std;
+  
+// Global x  
+int x = 0;  
+   
+int main()
+{
+  // Local x    
+  int x = 10; 
+  cout &lt;&lt; "Value of global x is " &lt;&lt; ::x;
+  cout &lt;&lt; "\nValue of local x is " &lt;&lt; x;  
+  return 0;
+}
+          </code>
+          <p>Output :</p>
+          <code>
+Value of global x is 0
+Value of local x is 10
+          </code>
     </article>
     </section>
   <section class="main-section" id="Constants">
     <header>Constants</header>
     <article>
+<p>Constants refer to fixed values that the program may not alter and they are called literals.
 
+Constants can be of any of the basic data types and can be divided into Integer Numerals, Floating-Point Numerals, Characters, Strings and Boolean Values.
+
+Again, constants are treated just like regular variables except that their values cannot be modified after their definition.</p>
+      <p>Defining Constants</p>
+      <p>There are two simple ways in C++ to define constants : </p>
+      <ul>
+        <li>Using <b>#define</b> preprocessor.</li>
+        <li>Using <b>const</b> keyword.</li>
+      </ul>
+      <p>Following is the form to use #define preprocessor to define a constant</p>
+      <code>
+        #define identifier value
+      </code>
+      <p>Following example explains it in detai</p>
+      <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+#define LENGTH 10   
+#define WIDTH  5
+#define NEWLINE '\n'
+
+int main() {
+   int area;  
+   
+   area = LENGTH * WIDTH;
+   cout &lt;&lt; area;
+   cout &lt;&lt; NEWLINE;
+   return 0;
+}
+        </code>
+        <p>When the above code is compiled and executed, it produces the following result</p>
+        <code>
+  50
+        </code>
+        <p>You can use const prefix to declare constants with a specific type as follows</p>
+        <code>
+          const type variable = value;
+        </code>
+        <p>Following example explains it in detail</p>
+        <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+   const int  LENGTH = 10;
+   const int  WIDTH  = 5;
+   const char NEWLINE = '\n';
+   int area;  
+   
+   area = LENGTH * WIDTH;
+   cout &lt;&lt; area;
+   cout &lt;&lt; NEWLINE;
+   return 0;
+}
+          </code>
+          <p>When the above code is compiled and executed, it produces the following result</p>
+          <code>
+  50
+          </code>
+          <p>Note that it is a good programming practice to define constants in CAPITALS</p>
     </article>
     </section>
-  <section class="main-section" id="Data_types">
-    <header>Data types</header>
+  
+  <section class="main-section" id="if...else_statements">
+    <header>if...else statements</header>
     <article>
-      
-    </article>
-    </section>
-  <section class="main-section" id="if...else_statement">
-    <header>if...else statement</header>
-    <article>
+<p>The if statement evaluates the test expression inside parenthesis.
 
+If test expression is evaluated to true, statements inside the body of the if statement is executed.
+
+If test expression is evaluated to false, statements inside the body of the if statement is skipped.</p>
+      <code>
+if (testExpression) 
+{
+   // statements
+}
+      </code>
+      <p> Here is an example of an if statement executing code. </p>
+      <code>
+// Program to print positive number entered by the user
+// If user enters negative number, it is skipped
+ 
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    int number;
+    cout &lt;&lt; "Enter an integer: ";
+    cin >> number;
+
+    // checks if the number is positive
+    if ( number > 0) 
+    {
+        cout &lt;&lt; "You entered a positive integer: " &lt;&lt; number &lt;&lt; endl;
+    }
+
+    cout &lt;&lt; "This statement is always executed.";
+    return 0;
+
+}
+        </code>
+        <p>Output 1</p>
+        <code>
+Enter an integer: 5
+You entered a positive number: 5
+This statement is always executed.
+        </code>
+        <p>Output 2</p>
+        <code>
+Enter a number: -5
+This statement is always executed.
+        </code>
+        <p> if...else</p>
+        <p>The if else statement executes the code inside the body of the if statement if the test expression is true and skips the code inside the body of the else statement.
+
+If the test expression is false, it executes the code inside the body of the else statement and skips the code inside the body of the if statement.</p>
+        <code>
+// Program to check whether an integer is positive or negative
+// This program considers 0 as positive number
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    int number;
+    cout &lt;&lt; "Enter an integer: ";
+    cin >> number;
+
+    if ( number >= 0)
+    {
+        cout &lt;&lt; "You entered a positive integer: " &lt;&lt; number &lt;&lt; endl;
+    }
+    
+    else
+    {
+        cout &lt;&lt; "You entered a negative integer: " &lt;&lt; number &lt;&lt; endl;
+    }
+
+    cout &lt;&lt; "This line is always printed.";
+    return 0;
+}
+          </code>
+          <p> Output : </p>
+          <code>
+Enter an integer: -4
+You entered a negative integer: -4.
+This line is always printed.
+          </code>
+          <p>C++ Nested if...else</p>
+          <p>The if...else statement executes two different codes depending upon whether the test expression is true or false. Sometimes, a choice has to be made from more than 2 possibilities.
+
+The nested if...else statement allows you to check for multiple test expressions and execute different codes for more than two conditions.</p>
+          <p>Syntax of Nested if...else</p>
+          <code>
+if (testExpression1) 
+{
+   // statements to be executed if testExpression1 is true
+}
+else if(testExpression2) 
+{
+   // statements to be executed if testExpression1 is false and testExpression2 is true
+}
+else if (testExpression 3) 
+{
+   // statements to be executed if testExpression1 and testExpression2 is false and testExpression3 is true
+}
+.
+.
+else 
+{
+   // statements to be executed if all test expressions are false
+}
+          </code>
+          <p> <p> Here is an example of a Nested if... else statement executing code. </p>
+          <code>
+// Program to check whether an integer is positive, negative or zero
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    int number;
+    cout &lt;&lt; "Enter an integer: ";
+    cin >> number;
+
+    if ( number > 0)
+    {
+        cout &lt;&lt; "You entered a positive integer: " &lt;&lt; number &lt;&lt; endl;
+    }
+    else if (number &lt; 0)
+    {
+        cout &lt;&lt; "You entered a negative integer: " &lt;&lt; number &lt;&lt; endl;
+    }
+    else
+    {
+        cout &lt;&lt; "You entered 0." &lt;&lt; endl;
+    }
+
+    cout &lt;&lt; "This line is always printed.";
+    return 0;
+}
+            </code>
+            <p> Output : </p>
+            <code>
+ Enter an integer: 0
+You entered 0.
+This line is always printed.
+            </code>
+      <p>Conditional/Ternary Operator ?:</p>
+      <p>A ternary operator operates on 3 operands which can be used instead of a if...else statement.\nConsider this code : </p>
+      <code>
+if ( a &lt; b ) {
+   a = b;
+}
+else {
+   a = -b;
+}
+          </code>
+        <p>You can replace the above code with:</p>
+        <code>
+a = (a &lt; b) ? b : -b;
+           </code>
+      <p>The ternary operator is more readable and practical than a if...else statement for short conditions.</p>
     </article>
     </section>
   <section class="main-section" id="while_statement">
     <header>while statement</header>
     <article>
+<p>In computer programming, loop repeats a certain block of code until some end condition is met.
 
+  There are 3 type of loops in C++ Programming :</p>
+      <ul>
+        <li>for Loop</li>
+        <li>while Loop</li>
+        <li>do... while Loop</li>
+      </ul>
+      <p>for Loop</p>
+      <p>The syntax for a for Loop is :</p>
+      <code>
+for(initializationStatement; testExpression; updateStatement) {
+    // codes 
+}   
+      </code>
+      <p>where, only the test expression is mandatory.
+        \nHow for loop works?
+      </p>
+      <ul>
+        <li>The initialization statement is executed only once at the beginning.</li>
+        <li>Then, the test expression is evaluated.</li>
+        <li>If the test expression is false, for loop is terminated. But if the test expression is true, codes inside body of for loop is executed and update expression is updated.</li>
+        <li>Again, the test expression is evaluated and this process repeats until the test expression is false.</li>
+      </ul>
+      <p> Example with code : </p>
+      <code>
+// C++ Program to find factorial of a number
+// Factorial on n = 1*2*3*...*n
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    int i, n, factorial = 1;
+
+    cout &lt;&lt; "Enter a positive integer: ";
+    cin >> n;
+
+    for (i = 1; i &lt;= n; ++i) {
+        factorial *= i;   // factorial = factorial * i;
+    }
+
+    cout &lt;&lt; "Factorial of " &lt;&lt; n &lt;&lt;" = " &lt;&lt;factorial;
+    return 0;
+}
+                                                </code>
+      <p> Output : </p>
+      <code>
+Enter a positive integer: 5
+Factorial of 5 = 120
+      </code>
+      <p>In the program, user is asked to enter a positive integer which is stored in variable n (suppose user entered 5). Here is the working of for loop:</p>
+      <ol>
+        <li>Initially, i is equal to 1, test expression is true, factorial becomes 1.</li>
+        <li>i is updated to 2, test expression is true, factorial becomes 2.</li>
+        <li>i is updated to 3, test expression is true, factorial becomes 6.</li>
+        <li>i is updated to 4, test expression is true, factorial becomes 24.</li>
+        <li>i is updated to 5, test expression is true, factorial becomes 120.</li>
+        <li>i is updated to 6, test expression is false, for loop is terminated.</li>
+      </ol>
+        <p>In the above program, variable i is not used outside of the for loop. In such cases, it is better to declare the variable in for loop (at initialization statement) as seen in the code below.</p>
+      <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    int n, factorial = 1;
+
+    cout &lt;&lt; "Enter a positive integer: ";
+    cin >> n;
+
+    for (int i = 1; i &lt;= n; ++i) {
+        factorial *= i;   // factorial = factorial * i;
+    }
+
+    cout &lt;&lt; "Factorial of " &lt;&lt; n &lt;&lt;" = " &lt;&lt; factorial;
+    return 0;
+} 
+      </code>
+      
+      <p>while Loop<p>
+      <p>The syntax for a while Loop is : </p>
+      <code>
+while (testExpression) 
+{
+     // code  
+}
+      </code>
+      <p>where, testExpression is checked on each entry of the while loop.
+        \nHow while loop works?
+      </p>
+      <ul>
+        <li>The while loop evaluates the test expression.</li>
+        <li>If the test expression is true, codes inside the body of while loop is evaluated.</li>
+        <li>Then, the test expression is evaluated again. This process goes on until the test expression is false.</li>
+        <li>When the test expression is false, while loop is terminated.</li>
+      </ul>
+      <p> while Loop example : </p>
+      <code>
+// C++ Program to compute factorial of a number
+// Factorial of n = 1*2*3...*n
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    int number, i = 1, factorial = 1;
+
+    cout &lt;&lt; "Enter a positive integer: ";
+    cin >> number;
+    
+    while ( i &lt;= number) {
+        factorial *= i;      //factorial = factorial * i;
+        ++i;
+    }
+
+    cout &lt;&lt; "Factorial of "&lt;&lt; number &lt;&lt;" = "&lt;&lt; factorial;
+    return 0;
+}
+                                                      </code>
+      <p> Output : </p>
+      <code>
+Enter a positive integer: 4
+Factorial of 4 = 24
+      </code>
+      <p>In this program, user is asked to enter a positive integer which is stored in variable number. Let's suppose, user entered 4.
+
+        \nThen, the while loop starts executing the code. Here's how while loop works:</p>
+      <ol>
+        <li>Initially, i = 1, test expression i &lt;= number is true and factorial becomes 1.</li>
+        <li>Variable i is updated to 2, test expression is true, factorial becomes 2.</li>
+        <li>Variable i is updated to 3, test expression is true, factorial becomes 6.</li>
+        <li>Variable i is updated to 4, test expression is true, factorial becomes 24.</li>
+        <li>Variable i is updated to 5, test expression is false and while loop is terminated.</li>
+      </ol>
+      
+      <p>do...while Loop</p>
+      <p>The do...while loop is a variant of the while loop with one important difference. The body of do...while loop is executed once before the test expression is checked.
+
+        \nThe syntax of do..while loop is:</p>
+      <code>
+do {
+   // codes;
+}
+while (testExpression);
+      </code>
+      <p>How do...while loop works?</p>
+      <ul>
+        <li>The codes inside the body of loop is executed at least once. Then, only the test expression is checked.</li>
+        <li>If the test expression is true, the body of loop is executed. This process continues until the test expression becomes false.</li>
+        <li>When the test expression is false, do...while loop is terminated.</li>
+        </ul>
+      <p> do...while Loop example : </p>
+      <code>
+// C++ program to add numbers until user enters 0
+
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+{
+    float number, sum = 0.0;
+    
+    do {
+        cout &lt;&lt; "Enter a number: ";
+        cin>>number;
+        sum += number;
+    }
+    while(number != 0.0);
+
+    cout &lt;&lt; "Total sum = " &lt;&lt; sum;
+    
+    return 0;
+}
+      </code>
+      <p>Output : </p>
+      <code>
+Enter a number: 2
+Enter a number: 3
+Enter a number: 4
+Enter a number: -4
+Enter a number: 2
+Enter a number: 4.4
+Enter a number: 2
+Enter a number: 0
+      </code>
     </article>
     </section>
-  <section class="main-section" id="Function-declarations">
+    
+  <section class="main-section" id="Function_declarations">
     <header>Function declarations</header>
     <article> 
+<p>A function is a group of statements that together perform a task. Every C++ program has at least one function, which is main(), and all the most trivial programs can define additional functions.
 
+\nYou can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division usually is such that each function performs a specific task.
+
+\nA function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.
+
+\nThe C++ standard library provides numerous built-in functions that your program can call. For example, function strcat() to concatenate two strings, function memcpy() to copy one memory location to another location and many more functions.
+
+  \nA function is known with various names like a method or a sub-routine or a procedure etc.</p>
+      <p> Defining a Function</p>
+      <p>The general form of a C++ function definition is as follows</p>
+      <code>
+return_type function_name( parameter list ) {
+   body of the function
+}
+      </code>
+      <p>A C++ function definition consists of a function header and a function body. Here are all the parts of a function : </p>
+      <ul>
+        <li><b>Return Type</b> − A function may return a value. The return_type is the data type of the value the function returns. Some functions perform the desired operations without returning a value. In this case, the return_type is the keyword void.</li>
+        <li><b>Function Name</b> − This is the actual name of the function. The function name and the parameter list together constitute the function signature.</li>
+        <li><b>Parameters</b> − A parameter is like a placeholder. When a function is invoked, you pass a value to the parameter. This value is referred to as actual parameter or argument. The parameter list refers to the type, order, and number of the parameters of a function. Parameters are optional; that is, a function may contain no parameters.</li>
+        <li><b>Function Body</b> − The function body contains a collection of statements that define what the function does.</li>
+      </ul>
+      <p>Example : \n
+Following is the source code for a function called max(). This function takes two parameters num1 and num2 and return the biggest of both </p>
+      <code>
+// function returning the max between two numbers
+ 
+int max(int num1, int num2) {
+   // local variable declaration
+   int result;
+ 
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
+}
+      </code>
+      <p>Function Declarations\n
+A function declaration tells the compiler about a function name and how to call the function. The actual body of the function can be defined separately.
+
+        \nA function declaration has the following parts :</p>
+      <code>
+return_type function_name( parameter list );
+      </code>
+      <p>For the above defined function max(), following is the function declaration :</p>
+      <code>
+int max(int num1, int num2);
+      </code>
+      <p>Parameter names are not important in function declaration only their type is required, so following is also valid declaration : </p>
+      <code>
+int max(int, int);
+      </code>
+      <p>Function declaration is required when you define a function in one source file and you call that function in another file. In such case, you should declare the function at the top of the file calling the function.</p>
+      <p>Calling a Function</p>
+      <p>While creating a C++ function, you give a definition of what the function has to do. To use a function, you will have to call or invoke that function.\n
+
+When a program calls a function, program control is transferred to the called function. A called function performs defined task and when it’s return statement is executed or when its function-ending closing brace is reached, it returns program control back to the main program.\n
+
+To call a function, you simply need to pass the required parameters along with function name, and if function returns a value, then you can store returned value. For example :</p>
+      <code>
+#include &lt;iostream&gt;
+using namespace std;
+ 
+// function declaration
+int max(int num1, int num2);
+ 
+int main () {
+   // local variable declaration:
+   int a = 100;
+   int b = 200;
+   int ret;
+ 
+   // calling a function to get max value.
+   ret = max(a, b);
+   cout &lt;&lt; "Max value is : " &lt;&lt; ret &lt;&lt; endl;
+ 
+   return 0;
+}
+ 
+// function returning the max between two numbers
+int max(int num1, int num2) {
+   // local variable declaration
+   int result;
+ 
+   if (num1 > num2)
+      result = num1;
+   else
+      result = num2;
+ 
+   return result; 
+}
+        </code>
+      <p>I kept max() function along with main() function and compiled the source code. While running final executable, it would produce the following result </p>
+      <code>
+ Max value is : 200
+      </code>
+      <p>Function Arguments<p>
+      <p>If a function is to use arguments, it must declare variables that accept the values of the arguments. These variables are called the formal parameters of the function.\n
+
+The formal parameters behave like other local variables inside the function and are created upon entry into the function and destroyed upon exit.\n
+      
+      By default, C++ uses call by value to pass arguments. In general, this means that code within a function cannot alter the arguments used to call the function and above mentioned example while calling max() function used the same method.</p>
+      <p>Default Values for Parameters</p>
+      <p>When you define a function, you can specify a default value for each of the last parameters. This value will be used if the corresponding argument is left blank when calling to the function.\n
+
+This is done by using the assignment operator and assigning values for the arguments in the function definition. If a value for that parameter is not passed when the function is called, the default given value is used, but if a value is specified, this default value is ignored and the passed value is used instead. Consider the following example :</p>
+      <code>
+#include &lt;iostream&gt;
+using namespace std;
+ 
+int sum(int a, int b = 20) {
+   int result;
+   result = a + b;
+  
+   return (result);
+}
+int main () {
+   // local variable declaration:
+   int a = 100;
+   int b = 200;
+   int result;
+ 
+   // calling a function to add the values.
+   result = sum(a, b);
+   cout &lt;&lt; "Total value is :" &lt;&lt; result &lt;&lt; endl;
+
+   // calling a function again as follows.
+   result = sum(a);
+   cout &lt;&lt; "Total value is :" &lt;&lt; result &lt;&lt; endl;
+ 
+   return 0;
+}
+      </code>
+        <p>When the above code is compiled and executed, it produces the following result</p>
+        <code>
+Total value is :300
+Total value is :120
+        </code>
     </article>
     </section>
   <section class="main-section" id="Reference">
@@ -319,7 +922,9 @@ int main()
     <article>
       <li> Hello World code : This article is contributed by <a href="https://www.facebook.com/h%3C/li%3E%3Cp%3Earsh.agarwal.16752" target="_blank"><b>Harsh Agarwal</b></a>. If you like GeeksforGeeks and would like to contribute, you can also write an article using contribute.geeksforgeeks.org or mail your article to contribute@geeksforgeeks.org. See your article appearing on the GeeksforGeeks main page and help other Geeks. <a href="https://www.geeksforgeeks.org/writing-first-c-program-hello-world-example/" target="_blank"><b>GeeksforGeeks</b></a>
       </li>
-      <li> Variables : http://www-h.eng.cam.ac.uk/help/languages/C++/c++_tutorial/variables.html </li>
+      <li> Variables + Global variables : http://www-h.eng.cam.ac.uk/help/languages/C++/c++_tutorial/variables.html </li>
+      <li>if...else statements : https://www.programiz.com/cpp-programming/if-else</li>
+      <li>while loops : https://www.tutorialspoint.com/cplusplus/cpp_if_else_statement.htm</li>
     </article>
     </section>
 </main>
