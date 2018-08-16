@@ -2,6 +2,11 @@ html,body{
     min-width:290px;
     line-height: 1.5;
 }
+@media only screen and (max-width: 1125px) {
+html,body{
+    min-width:100%;
+    }
+}
 #main-doc {
   background-color : #808080;
 }
@@ -96,6 +101,5 @@ code{
     position: relative;
     margin-left:0px;
     margin-top:270px;
-    min-width : 100%;
   }
 }
