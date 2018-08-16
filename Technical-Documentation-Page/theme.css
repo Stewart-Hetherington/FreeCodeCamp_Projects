@@ -96,5 +96,6 @@ code{
     position: relative;
     margin-left:0px;
     margin-top:270px;
+    min-width : 100%;
   }
 }
