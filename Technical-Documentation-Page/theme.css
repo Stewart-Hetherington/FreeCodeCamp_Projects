@@ -1,12 +1,16 @@
 html,body{
-    min-width:300px;
+    min-width:290px;
     line-height: 1.5;
 }
 @media only screen and (max-width: 1125px) {
 html,body{
-    min-width:100%;
+    min-width:80vh;
+    }
 }
+#main-doc {
+  background-color : #808080;
 }
+
 #navbar {
   background-color : #C0C0C0;
   position : fixed;
@@ -21,13 +25,6 @@ html,body{
   height : 90%;
   overflow-y:auto;
   overflow-x:hidden;
-}
-@media only screen and (max-width: 1125px) {
-  
-  #navbar ul{
-  border:1px solid;
-    height:207px;
-  }
 }
 #navbar li{
   position : relative;
@@ -46,7 +43,6 @@ a{
     cursor:pointer;
 } 
 #main-doc{
-  background-color : #808080;
   position: absolute;
   margin-left:310px;
   padding:20px;
@@ -66,19 +62,12 @@ section article{
   margin :15px;
   font-size :1.2em;
 }
-@media only screen and (max-width: 1125px) {
-  section article{
-  margin :15px;
-  font-size :1em;
-  text-align: justify;
-}
-}
 section li {
-  margin : 15px;
+  margin : 10px 0px 0px 20px;
 }
 code{
   display:block;
-  text-align: left;
+    text-align: left;
   white-space: pre;
   position: relative;
     word-break: normal;
@@ -91,13 +80,26 @@ code{
   color: black;
 }
 @media only screen and (max-width: 1125px) {
-
+  
+  #navbar ul{
+  border:1px solid;
+    height:207px;
+  }
+    #navbar{
+      background-color:white;
+      position:absolute;
+      top:0;
+      padding:0;
+      margin: 0;
+      width:100%;
+      max-height:275px;
+      border:none;
+      z-index:1;
+      border-bottom:2px solid;
+    }
   #main-doc{
     position: relative;
     margin-left:0px;
     margin-top:270px;
   }
-}
-b{
-  color: green;
 }
