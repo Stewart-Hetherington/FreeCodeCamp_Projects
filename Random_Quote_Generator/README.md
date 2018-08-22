@@ -9,6 +9,9 @@ You can use any mix of HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and
 url link to gitHub page:
   https://htmlpreview.github.io/?https://github.com/Stewart-Hetherington/FreeCodeCamp_Projects/blob/master/Random_Quote_Generator/index.html
   
+  url link to codePen page:
+  https://codepen.io/Stewart-Hetherington/pen/zwyKEp
+  
 User Story #1: I can see a wrapper element with a corresponding id="quote-box".
 
 User Story #2: Within #quote-box, I can see an element with a corresponding id="text".
